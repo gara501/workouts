@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # workouts-app
 
 ## Project setup
@@ -27,3 +28,7 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+=======
+# workouts
+Soul4Fit workouts Vue
+>>>>>>> 8d073b503a1f8c6542eea15935380fe2d262018c
