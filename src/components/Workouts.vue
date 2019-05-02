@@ -2,14 +2,14 @@
   <div class="workouts">
     <h4>Available Workouts</h4>
     <router-link :to="{name: 'add'}">
-      <button>Crear Workout</button>
+      <button class="btn btn-success btn-block">Crear Workout</button>
     </router-link>
-    <ul v-for="program of programsfs" :key="program.id">
-      <li>{{program.name}}
+    <ul class="list-group mt-5" v-for="program of programsfs" :key="program.id">
+      <li class="list-group-item">{{program.name}}
         <router-link :to="{name: 'edit', params: {id: program.id}}">
-          <button>Editar</button>
+          <button class="btn btn-success">Editar</button>
         </router-link>
-        <button @click="deleteProgram(program.id)">Eliminar</button>
+        <button class="btn btn-danger" @click="deleteProgram(program.id)">Eliminar</button>
       </li>
     </ul>
   </div>
