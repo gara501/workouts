@@ -23,7 +23,7 @@ export default {
     ...mapState(['programsfs'])
   },
   methods: {
-    ...mapActions(['getData'])
+    ...mapActions(['getData', 'deleteProgram'])
   },
   created() {
     this.getData();

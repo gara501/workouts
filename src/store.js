@@ -76,7 +76,7 @@ export default new Vuex.Store({
         .doc(id)
         .delete()
         .then(() => {
-          commit('deleteProgram', id);
+          commit("deleteProgram", id);
         });
     }
   }
