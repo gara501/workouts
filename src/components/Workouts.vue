@@ -5,11 +5,17 @@
       <button class="btn btn-success btn-block">Crear Workout</button>
     </router-link>
     <ul class="list-group mt-5" v-for="program of programsfs" :key="program.id">
-      <li class="list-group-item">{{program.name}}
-        <router-link :to="{name: 'edit', params: {id: program.id}}">
-          <button class="btn btn-success">Editar</button>
-        </router-link>
-        <button class="btn btn-danger" @click="deleteProgram(program.id)">Eliminar</button>
+      <li class="list-group-item">
+        <div class="float-left">
+          <p>{{program.name}}</p>
+        </div>
+        <div class="float-right">
+          <router-link :to="{name: 'edit', params: {id: program.id}}">
+            <button class="btn btn-success mr-2">Editar</button>
+          </router-link>
+          <button class="btn btn-danger" @click="deleteProgram(program.id)">Eliminar</button>
+        </div>
+        
       </li>
     </ul>
   </div>
