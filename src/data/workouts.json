@@ -1,0 +1,556 @@
+[
+  {
+    "name": "Jeff Nippard", 
+    "id": 1, 
+    "detail": {
+      "phases": [
+        {
+          "name": "Phase 1",
+          "weeks": [
+            {
+              "name": "Week 1",
+              "days": [
+                {
+                  "name": "Legs",
+                  "exercises": [
+                    {
+                      "name": "Back Squat",
+                      "reps": "5",
+                      "sets": "4",
+                      "rpe": "70%",
+                      "rest": "3-4 min",
+                      "notes": "SIT BACK AND DOWN, 15° TOE FLARE, DRIVE YOUR KNEES OUT LATERALLY",
+                      "cadency": "1-2-0",
+                      "video": "https://www.youtube.com/watch?v=RpBf5ZRdvWE",
+                      "image": "https://cdn2.coachmag.co.uk/sites/coachmag/files/styles/16x9_480/public/2017/06/back-squat.jpg?itok=WbIWcsNG&timestamp=1498572015"
+                    },
+                    {
+                      "name": "Deadlift",
+                      "reps": "8",
+                      "sets": "2",
+                      "rpe": "65%",
+                      "rest": "3-4 min",
+                      "notes": "Brace your lats, hips high, chest tall",
+                      "cadency": "2-1-1",
+                      "video": "https://www.youtube.com/watch?v=ytGaGIn3SjE",
+                      "image": "https://www.t-nation.com/system/publishing/articles/10005894/original/The-5-Most-Dangerous-Deadlift-Mistakes.jpg?1517861498"
+                    },
+                    {
+                      "name": "Barbell Hip Thrust",
+                      "reps": "10-12",
+                      "sets": "3",
+                      "rpe": "6",
+                      "rest": "2-3 min",
+                      "notes": "TUCK YOUR CHIN AND RIB CAGE DOWN, ONLY MOVE YOUR HIPS. USE A PAD",
+                      "cadency": "1-2-2",
+                      "video": "https://www.youtube.com/watch?v=xDmFkJxPzeM",
+                      "image": "https://media1.popsugar-assets.com/files/thumbor/cyHx2n1yVjvNc-zFZjsk1MYUS9Q/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2018/03/29/835/n/1922729/tmp_kVfCvo_6879136d8067a956_Hip-Thrusts.jpg"
+                    },
+                    {
+                      "name": "Dumbell walking lunge",
+                      "reps": "20 each leg",
+                      "sets": "2",
+                      "rpe": "7",
+                      "rest": "1-2 min",
+                      "notes": "TAKE MEDIUM STRIDES, MINIMIZE THE AMOUNT YOU PUSH OFF YOUR REAR LEG",
+                      "cadency": "1-1-1",
+                      "video": "https://www.youtube.com/watch?v=YYWhkctnP2o",
+                      "image": "http://scarysymptoms.com/wp-content/uploads/2016/11/walking-lunge-300x277.png"
+                    },
+                    {
+                      "name": "A1: Leg Extension",
+                      "reps": "15",
+                      "sets": "3",
+                      "rpe": "7",
+                      "rest": "0",
+                      "notes": "Squeeze the quads",
+                      "cadency": "1-2-1",
+                      "video": "https://www.youtube.com/watch?v=YyvSfVjQeL0",
+                      "image": "https://www.fitdir.com/media/catalog/product/m/e/mec_extension.jpg"
+                    },
+                    {
+                      "name": "A2: Seated Leg curl",
+                      "reps": "15",
+                      "sets": "3",
+                      "rpe": "7",
+                      "rest": "0",
+                      "notes": "Squeeze your hamstrings",
+                      "cadency": "1-2-1",
+                      "video": "https://www.youtube.com/watch?v=fK0uZ3KRZRI",
+                      "image": "https://cdn1.coachmag.co.uk/sites/coachmag/files/styles/insert_main_wide_image/public/2018/04/lying-leg-curl.jpg?itok=1YpB4a_J"
+                    },
+                    {
+                      "name": "Standing calf raise",
+                      "reps": "20 each leg",
+                      "sets": "2",
+                      "rpe": "7",
+                      "rest": "1-2 min",
+                      "notes": "TAKE MEDIUM STRIDES, MINIMIZE THE AMOUNT YOU PUSH OFF YOUR REAR LEG",
+                      "cadency": "1-1-1",
+                      "video": "https://www.youtube.com/watch?v=xDmFkJxPzeM",
+                      "image": "https://media1.popsugar-assets.com/files/thumbor/cyHx2n1yVjvNc-zFZjsk1MYUS9Q/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2018/03/29/835/n/1922729/tmp_kVfCvo_6879136d8067a956_Hip-Thrusts.jpg"
+                    }
+                  ]
+                },
+                {
+                  "name": "Push",
+                  "exercises": [
+                    {
+                      "name": "Barbell bench press",
+                      "reps": "4",
+                      "sets": "3",
+                      "rpe": "75%",
+                      "rest": "2-3 min",
+                      "notes": "TUCK ELBOWS AT A 45° ANGLE, SQUEEZE YOUR SHOULDER BLADES AND STAY FIRM ON THE BENCH",
+                      "cadency": "1-1-3",
+                      "video": "https://www.youtube.com/watch?v=vthMCtgVtFw",
+                      "image": "https://cdn2.coachmag.co.uk/sites/coachmag/files/styles/insert_main_wide_image/public/2016/07/1-1-bench-press.jpg?itok=bJYGPFGO"
+                    },
+                    {
+                      "name": "Dumbell seated shoulder press",
+                      "reps": "8-10",
+                      "sets": "3",
+                      "rpe": "7",
+                      "rest": "2-3 min",
+                      "notes": "BRING THE DUMBBELL ALL THE WAY DOWN, KEEP YOUR TORSO UPRIGHT",
+                      "cadency": "1-1-2",
+                      "video": "https://www.youtube.com/watch?v=qEwKCR5JCog",
+                      "image": "https://cdn-ami-drupal.heartyhosting.com/sites/muscleandfitness.com/files/seated_dumbbell_overhead_press_main.jpg"
+                    },
+                    {
+                      "name": "Weighted dip",
+                      "reps": "6-10",
+                      "sets": "3",
+                      "rpe": "7",
+                      "rest": "1-2 min",
+                      "notes": "Tuck your elbows to 45 degrees angle",
+                      "cadency": "1-1-1",
+                      "video": "https://www.youtube.com/watch?v=yN6Q1UI_xkE",
+                      "image": "https://cdn-ami-drupal.heartyhosting.com/sites/muscleandfitness.com/files/styles/full_node_image_1090x614/public/weighted-dip.jpg?itok=Lz2W7DGi&timestamp=1383329514"
+                    },
+                    {
+                      "name": "Low to high cable fly",
+                      "reps": "12-15",
+                      "sets": "3",
+                      "rpe": "8",
+                      "rest": "1-2 min",
+                      "notes": "START EXTERNALLY ROTATED WITH YOUR ELBOWS DOWN AND OUT, PULL YOUR ELBOWS (NOT HANDS) UP AND IN WHILE SLIGHTLY INTERNALLY ROTATING YOUR SHOULDER",
+                      "cadency": "1-1-1",
+                      "video": "https://www.youtube.com/watch?v=M1N804yWA-8",
+                      "image": "https://qph.fs.quoracdn.net/main-qimg-67b75a1ccfd667273a81f19bb9abafac"
+                    },
+                    {
+                      "name": "Dumbell isolateral skull crusher",
+                      "reps": "12",
+                      "sets": "3",
+                      "rpe": "8",
+                      "rest": "1-2 min",
+                      "notes": "Press the dumbell over your head",
+                      "cadency": "1-2-1",
+                      "video": "https://www.youtube.com/watch?v=ir5PsbniVSc",
+                      "image": "https://www.bodybuilding.com/fun/images/2015/your-complete-guide-to-skullcrushers-graphics-neutral-grip-dumbbell-skullcrusher-700xh.jpg"
+                    },
+                    {
+                      "name": "Dumbell lateral raise",
+                      "reps": "15",
+                      "sets": "3",
+                      "rpe": "8",
+                      "rest": "1-2 min",
+                      "notes": "Avoid internal rotation to protect your shoulder joints",
+                      "cadency": "1-1-1",
+                      "video": "https://www.youtube.com/watch?v=q5sNYB1Q6aM",
+                      "image": "https://cdn-ami-drupal.heartyhosting.com/sites/muscleandfitness.com/files/dumbell-lateral-raise-upper-body-weights-main.jpg"
+                    },
+                    {
+                      "name": "Ab wheel rollout",
+                      "reps": "6",
+                      "sets": "3",
+                      "rpe": "7",
+                      "rest": "1-2 min",
+                      "notes": "Squeeze glutes and abs",
+                      "cadency": "1-2-1",
+                      "video": "https://www.youtube.com/watch?v=A3uK5TPzHq8",
+                      "image": "https://yurielkaim.com/wp-content/uploads/2016/10/Ab-Wheel-Rollout-Demo.jpg"
+                    }
+                  ]
+                },
+                {
+                  "name": "Pull",
+                  "exercises": [
+                    {
+                      "name": "1 Arm lat pull in",
+                      "reps": "15-20",
+                      "sets": "2",
+                      "rpe": "5",
+                      "rest": "1-2 min",
+                      "notes": "LIGHT SETS, DRIVE ELBOW DOWN AND IN TOWARD SIDE, LATERALLY FLEX INTO THE DIRECTION OF PULL",
+                      "cadency": "1-1-1",
+                      "video": "https://youtu.be/f2JDJV0AnyY?t=120",
+                      "image": "https://cdn-ami-drupal.heartyhosting.com/sites/muscleandfitness.com/files/Screen%20shot%202013-09-04%20at%2011.18.54%20AM_0.png"
+                    },
+                    {
+                      "name": "Deadlift",
+                      "reps": "8",
+                      "sets": "2",
+                      "rpe": "65%",
+                      "rest": "3-4 min",
+                      "notes": "Brace your lats, hips high, chest tall",
+                      "cadency": "2-1-1",
+                      "video": "https://www.youtube.com/watch?v=ytGaGIn3SjE",
+                      "image": "https://www.t-nation.com/system/publishing/articles/10005894/original/The-5-Most-Dangerous-Deadlift-Mistakes.jpg?1517861498"
+                    },
+                    {
+                      "name": "Barbell Hip Thrust",
+                      "reps": "10-12",
+                      "sets": "3",
+                      "rpe": "6",
+                      "rest": "2-3 min",
+                      "notes": "TUCK YOUR CHIN AND RIB CAGE DOWN, ONLY MOVE YOUR HIPS. USE A PAD",
+                      "cadency": "1-2-2",
+                      "video": "https://www.youtube.com/watch?v=xDmFkJxPzeM",
+                      "image": "https://media1.popsugar-assets.com/files/thumbor/cyHx2n1yVjvNc-zFZjsk1MYUS9Q/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2018/03/29/835/n/1922729/tmp_kVfCvo_6879136d8067a956_Hip-Thrusts.jpg"
+                    },
+                    {
+                      "name": "Dumbell walking lunge",
+                      "reps": "20 each leg",
+                      "sets": "2",
+                      "rpe": "7",
+                      "rest": "1-2 min",
+                      "notes": "TAKE MEDIUM STRIDES, MINIMIZE THE AMOUNT YOU PUSH OFF YOUR REAR LEG",
+                      "cadency": "1-1-1",
+                      "video": "https://www.youtube.com/watch?v=YYWhkctnP2o",
+                      "image": "http://scarysymptoms.com/wp-content/uploads/2016/11/walking-lunge-300x277.png"
+                    },
+                    {
+                      "name": "A1: Leg Extension",
+                      "reps": "15",
+                      "sets": "3",
+                      "rpe": "7",
+                      "rest": "0",
+                      "notes": "Squeeze the quads",
+                      "cadency": "1-2-1",
+                      "video": "https://www.youtube.com/watch?v=YyvSfVjQeL0",
+                      "image": "https://www.fitdir.com/media/catalog/product/m/e/mec_extension.jpg"
+                    },
+                    {
+                      "name": "A2: Seated Leg curl",
+                      "reps": "15",
+                      "sets": "3",
+                      "rpe": "7",
+                      "rest": "0",
+                      "notes": "Squeeze your hamstrings",
+                      "cadency": "1-2-1",
+                      "video": "https://www.youtube.com/watch?v=fK0uZ3KRZRI",
+                      "image": "https://cdn1.coachmag.co.uk/sites/coachmag/files/styles/insert_main_wide_image/public/2018/04/lying-leg-curl.jpg?itok=1YpB4a_J"
+                    },
+                    {
+                      "name": "Standing calf raise",
+                      "reps": "20 each leg",
+                      "sets": "2",
+                      "rpe": "7",
+                      "rest": "1-2 min",
+                      "notes": "TAKE MEDIUM STRIDES, MINIMIZE THE AMOUNT YOU PUSH OFF YOUR REAR LEG",
+                      "cadency": "1-1-1",
+                      "video": "https://www.youtube.com/watch?v=xDmFkJxPzeM",
+                      "image": "https://media1.popsugar-assets.com/files/thumbor/cyHx2n1yVjvNc-zFZjsk1MYUS9Q/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2018/03/29/835/n/1922729/tmp_kVfCvo_6879136d8067a956_Hip-Thrusts.jpg"
+                    }
+                  ]
+                },
+                {
+                  "name": "Legs",
+                  "exercises": [
+                    {
+                      "name": "Back Squat",
+                      "reps": "5",
+                      "sets": "4",
+                      "rpe": "70%",
+                      "rest": "3-4 min",
+                      "notes": "SIT BACK AND DOWN, 15° TOE FLARE, DRIVE YOUR KNEES OUT LATERALLY",
+                      "cadency": "1-2-0",
+                      "video": "https://www.youtube.com/watch?v=RpBf5ZRdvWE",
+                      "image": "https://cdn2.coachmag.co.uk/sites/coachmag/files/styles/16x9_480/public/2017/06/back-squat.jpg?itok=WbIWcsNG&timestamp=1498572015"
+                    },
+                    {
+                      "name": "Deadlift",
+                      "reps": "8",
+                      "sets": "2",
+                      "rpe": "65%",
+                      "rest": "3-4 min",
+                      "notes": "Brace your lats, hips high, chest tall",
+                      "cadency": "2-1-1",
+                      "video": "https://www.youtube.com/watch?v=ytGaGIn3SjE",
+                      "image": "https://www.t-nation.com/system/publishing/articles/10005894/original/The-5-Most-Dangerous-Deadlift-Mistakes.jpg?1517861498"
+                    },
+                    {
+                      "name": "Barbell Hip Thrust",
+                      "reps": "10-12",
+                      "sets": "3",
+                      "rpe": "6",
+                      "rest": "2-3 min",
+                      "notes": "TUCK YOUR CHIN AND RIB CAGE DOWN, ONLY MOVE YOUR HIPS. USE A PAD",
+                      "cadency": "1-2-2",
+                      "video": "https://www.youtube.com/watch?v=xDmFkJxPzeM",
+                      "image": "https://media1.popsugar-assets.com/files/thumbor/cyHx2n1yVjvNc-zFZjsk1MYUS9Q/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2018/03/29/835/n/1922729/tmp_kVfCvo_6879136d8067a956_Hip-Thrusts.jpg"
+                    },
+                    {
+                      "name": "Dumbell walking lunge",
+                      "reps": "20 each leg",
+                      "sets": "2",
+                      "rpe": "7",
+                      "rest": "1-2 min",
+                      "notes": "TAKE MEDIUM STRIDES, MINIMIZE THE AMOUNT YOU PUSH OFF YOUR REAR LEG",
+                      "cadency": "1-1-1",
+                      "video": "https://www.youtube.com/watch?v=YYWhkctnP2o",
+                      "image": "http://scarysymptoms.com/wp-content/uploads/2016/11/walking-lunge-300x277.png"
+                    },
+                    {
+                      "name": "A1: Leg Extension",
+                      "reps": "15",
+                      "sets": "3",
+                      "rpe": "7",
+                      "rest": "0",
+                      "notes": "Squeeze the quads",
+                      "cadency": "1-2-1",
+                      "video": "https://www.youtube.com/watch?v=YyvSfVjQeL0",
+                      "image": "https://www.fitdir.com/media/catalog/product/m/e/mec_extension.jpg"
+                    },
+                    {
+                      "name": "A2: Seated Leg curl",
+                      "reps": "15",
+                      "sets": "3",
+                      "rpe": "7",
+                      "rest": "0",
+                      "notes": "Squeeze your hamstrings",
+                      "cadency": "1-2-1",
+                      "video": "https://www.youtube.com/watch?v=fK0uZ3KRZRI",
+                      "image": "https://cdn1.coachmag.co.uk/sites/coachmag/files/styles/insert_main_wide_image/public/2018/04/lying-leg-curl.jpg?itok=1YpB4a_J"
+                    },
+                    {
+                      "name": "Standing calf raise",
+                      "reps": "20 each leg",
+                      "sets": "2",
+                      "rpe": "7",
+                      "rest": "1-2 min",
+                      "notes": "TAKE MEDIUM STRIDES, MINIMIZE THE AMOUNT YOU PUSH OFF YOUR REAR LEG",
+                      "cadency": "1-1-1",
+                      "video": "https://www.youtube.com/watch?v=xDmFkJxPzeM",
+                      "image": "https://media1.popsugar-assets.com/files/thumbor/cyHx2n1yVjvNc-zFZjsk1MYUS9Q/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2018/03/29/835/n/1922729/tmp_kVfCvo_6879136d8067a956_Hip-Thrusts.jpg"
+                    }
+                  ]
+                },
+                {
+                  "name": "Push",
+                  "exercises": [
+                    {
+                      "name": "Back Squat",
+                      "reps": "5",
+                      "sets": "4",
+                      "rpe": "70%",
+                      "rest": "3-4 min",
+                      "notes": "SIT BACK AND DOWN, 15° TOE FLARE, DRIVE YOUR KNEES OUT LATERALLY",
+                      "cadency": "1-2-0",
+                      "video": "https://www.youtube.com/watch?v=RpBf5ZRdvWE",
+                      "image": "https://cdn2.coachmag.co.uk/sites/coachmag/files/styles/16x9_480/public/2017/06/back-squat.jpg?itok=WbIWcsNG&timestamp=1498572015"
+                    },
+                    {
+                      "name": "Deadlift",
+                      "reps": "8",
+                      "sets": "2",
+                      "rpe": "65%",
+                      "rest": "3-4 min",
+                      "notes": "Brace your lats, hips high, chest tall",
+                      "cadency": "2-1-1",
+                      "video": "https://www.youtube.com/watch?v=ytGaGIn3SjE",
+                      "image": "https://www.t-nation.com/system/publishing/articles/10005894/original/The-5-Most-Dangerous-Deadlift-Mistakes.jpg?1517861498"
+                    },
+                    {
+                      "name": "Barbell Hip Thrust",
+                      "reps": "10-12",
+                      "sets": "3",
+                      "rpe": "6",
+                      "rest": "2-3 min",
+                      "notes": "TUCK YOUR CHIN AND RIB CAGE DOWN, ONLY MOVE YOUR HIPS. USE A PAD",
+                      "cadency": "1-2-2",
+                      "video": "https://www.youtube.com/watch?v=xDmFkJxPzeM",
+                      "image": "https://media1.popsugar-assets.com/files/thumbor/cyHx2n1yVjvNc-zFZjsk1MYUS9Q/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2018/03/29/835/n/1922729/tmp_kVfCvo_6879136d8067a956_Hip-Thrusts.jpg"
+                    },
+                    {
+                      "name": "Dumbell walking lunge",
+                      "reps": "20 each leg",
+                      "sets": "2",
+                      "rpe": "7",
+                      "rest": "1-2 min",
+                      "notes": "TAKE MEDIUM STRIDES, MINIMIZE THE AMOUNT YOU PUSH OFF YOUR REAR LEG",
+                      "cadency": "1-1-1",
+                      "video": "https://www.youtube.com/watch?v=YYWhkctnP2o",
+                      "image": "http://scarysymptoms.com/wp-content/uploads/2016/11/walking-lunge-300x277.png"
+                    },
+                    {
+                      "name": "A1: Leg Extension",
+                      "reps": "15",
+                      "sets": "3",
+                      "rpe": "7",
+                      "rest": "0",
+                      "notes": "Squeeze the quads",
+                      "cadency": "1-2-1",
+                      "video": "https://www.youtube.com/watch?v=YyvSfVjQeL0",
+                      "image": "https://www.fitdir.com/media/catalog/product/m/e/mec_extension.jpg"
+                    },
+                    {
+                      "name": "A2: Seated Leg curl",
+                      "reps": "15",
+                      "sets": "3",
+                      "rpe": "7",
+                      "rest": "0",
+                      "notes": "Squeeze your hamstrings",
+                      "cadency": "1-2-1",
+                      "video": "https://www.youtube.com/watch?v=fK0uZ3KRZRI",
+                      "image": "https://cdn1.coachmag.co.uk/sites/coachmag/files/styles/insert_main_wide_image/public/2018/04/lying-leg-curl.jpg?itok=1YpB4a_J"
+                    },
+                    {
+                      "name": "Standing calf raise",
+                      "reps": "20 each leg",
+                      "sets": "2",
+                      "rpe": "7",
+                      "rest": "1-2 min",
+                      "notes": "TAKE MEDIUM STRIDES, MINIMIZE THE AMOUNT YOU PUSH OFF YOUR REAR LEG",
+                      "cadency": "1-1-1",
+                      "video": "https://www.youtube.com/watch?v=xDmFkJxPzeM",
+                      "image": "https://media1.popsugar-assets.com/files/thumbor/cyHx2n1yVjvNc-zFZjsk1MYUS9Q/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2018/03/29/835/n/1922729/tmp_kVfCvo_6879136d8067a956_Hip-Thrusts.jpg"
+                    }
+                  ]
+                },
+                {
+                  "name": "Pull",
+                  "exercises": [
+                    {
+                      "name": "Back Squat",
+                      "reps": "5",
+                      "sets": "4",
+                      "rpe": "70%",
+                      "rest": "3-4 min",
+                      "notes": "SIT BACK AND DOWN, 15° TOE FLARE, DRIVE YOUR KNEES OUT LATERALLY",
+                      "cadency": "1-2-0",
+                      "video": "https://www.youtube.com/watch?v=RpBf5ZRdvWE",
+                      "image": "https://cdn2.coachmag.co.uk/sites/coachmag/files/styles/16x9_480/public/2017/06/back-squat.jpg?itok=WbIWcsNG&timestamp=1498572015"
+                    },
+                    {
+                      "name": "Deadlift",
+                      "reps": "8",
+                      "sets": "2",
+                      "rpe": "65%",
+                      "rest": "3-4 min",
+                      "notes": "Brace your lats, hips high, chest tall",
+                      "cadency": "2-1-1",
+                      "video": "https://www.youtube.com/watch?v=ytGaGIn3SjE",
+                      "image": "https://www.t-nation.com/system/publishing/articles/10005894/original/The-5-Most-Dangerous-Deadlift-Mistakes.jpg?1517861498"
+                    },
+                    {
+                      "name": "Barbell Hip Thrust",
+                      "reps": "10-12",
+                      "sets": "3",
+                      "rpe": "6",
+                      "rest": "2-3 min",
+                      "notes": "TUCK YOUR CHIN AND RIB CAGE DOWN, ONLY MOVE YOUR HIPS. USE A PAD",
+                      "cadency": "1-2-2",
+                      "video": "https://www.youtube.com/watch?v=xDmFkJxPzeM",
+                      "image": "https://media1.popsugar-assets.com/files/thumbor/cyHx2n1yVjvNc-zFZjsk1MYUS9Q/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2018/03/29/835/n/1922729/tmp_kVfCvo_6879136d8067a956_Hip-Thrusts.jpg"
+                    },
+                    {
+                      "name": "Dumbell walking lunge",
+                      "reps": "20 each leg",
+                      "sets": "2",
+                      "rpe": "7",
+                      "rest": "1-2 min",
+                      "notes": "TAKE MEDIUM STRIDES, MINIMIZE THE AMOUNT YOU PUSH OFF YOUR REAR LEG",
+                      "cadency": "1-1-1",
+                      "video": "https://www.youtube.com/watch?v=YYWhkctnP2o",
+                      "image": "http://scarysymptoms.com/wp-content/uploads/2016/11/walking-lunge-300x277.png"
+                    },
+                    {
+                      "name": "A1: Leg Extension",
+                      "reps": "15",
+                      "sets": "3",
+                      "rpe": "7",
+                      "rest": "0",
+                      "notes": "Squeeze the quads",
+                      "cadency": "1-2-1",
+                      "video": "https://www.youtube.com/watch?v=YyvSfVjQeL0",
+                      "image": "https://www.fitdir.com/media/catalog/product/m/e/mec_extension.jpg"
+                    },
+                    {
+                      "name": "A2: Seated Leg curl",
+                      "reps": "15",
+                      "sets": "3",
+                      "rpe": "7",
+                      "rest": "0",
+                      "notes": "Squeeze your hamstrings",
+                      "cadency": "1-2-1",
+                      "video": "https://www.youtube.com/watch?v=fK0uZ3KRZRI",
+                      "image": "https://cdn1.coachmag.co.uk/sites/coachmag/files/styles/insert_main_wide_image/public/2018/04/lying-leg-curl.jpg?itok=1YpB4a_J"
+                    },
+                    {
+                      "name": "Standing calf raise",
+                      "reps": "20 each leg",
+                      "sets": "2",
+                      "rpe": "7",
+                      "rest": "1-2 min",
+                      "notes": "TAKE MEDIUM STRIDES, MINIMIZE THE AMOUNT YOU PUSH OFF YOUR REAR LEG",
+                      "cadency": "1-1-1",
+                      "video": "https://www.youtube.com/watch?v=xDmFkJxPzeM",
+                      "image": "https://media1.popsugar-assets.com/files/thumbor/cyHx2n1yVjvNc-zFZjsk1MYUS9Q/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2018/03/29/835/n/1922729/tmp_kVfCvo_6879136d8067a956_Hip-Thrusts.jpg"
+                    }
+                  ]
+                },
+                {
+                  "name": "Rest",
+                  "exercises": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Phase 2",
+          "weeks": 8
+        }
+      ]
+    }
+  },
+  {
+    "name": "Soul4Fit Legs", 
+    "id": 2, 
+    "detail": {
+      "phases": [
+        {
+          "name": "Phase 1",
+          "weeks": 8
+        },
+        {
+          "name": "Phase 2",
+          "weeks": 8
+        }
+      ]
+    }
+  },
+  {
+    "name": "Soul4Fit Core", 
+    "id": 3, 
+    "detail": {
+      "phases": [
+        {
+          "name": "Phase 1",
+          "weeks": 4
+        },
+        {
+          "name": "Phase 2",
+          "weeks": 4
+        },
+        {
+          "name": "Phase 3",
+          "weeks": 4
+        }
+      ]
+    }
+  }
+]
