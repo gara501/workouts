@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .DS_Store
 node_modules
 /dist
@@ -8,25 +7,10 @@ node_modules
 .env.*.local
 
 # Log files
-=======
-# Logs
-logs
-*.log
->>>>>>> 8d073b503a1f8c6542eea15935380fe2d262018c
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-<<<<<<< HEAD
-# Editor directories and files
-.idea
-.vscode
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
-=======
 # Runtime data
 pids
 *.pid
@@ -81,4 +65,3 @@ typings/
 
 # next.js build output
 .next
->>>>>>> 8d073b503a1f8c6542eea15935380fe2d262018c

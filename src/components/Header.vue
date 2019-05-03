@@ -1,19 +1,40 @@
 <template>
   <div class="header">
     <img src="@/assets/logo.png" alt="logo" />
-    <ul>
-      <li><a href="#">Workouts</a></li>
-      <li><a href="#">About</a></li>
+    <ul id="nav">
+      <li>
+        <router-link :to="{name: 'home'}">Workouts</router-link>
+      </li>
+      <li>
+        <router-link :to="{name: 'add'}">Crear</router-link>
+      </li>
+      <li>
+        <p>Welcome: {{user.email}}</p>
+      </li>
+      <li>
+        <a @click="logoutUser">Logout</a>
+      </li>
     </ul>
-    
   </div>
 </template>
 
 <script>
+import Header from "@/components/Header.vue";
+import Workouts from "@/components/Workouts.vue";
+import { mapState, mapActions, mapGetters } from 'vuex';
+
 export default {
-  name: "Header",
-  props: {
-    msg: String
+  name: "header",
+  components: {
+    Header,
+    Workouts
+  },
+  computed: {
+    ...mapState(['user']),
+    ...mapGetters(['userExists'])
+  }, 
+  methods: {
+    ...mapActions(['logoutUser'])
   }
 };
 </script>

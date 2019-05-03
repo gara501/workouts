@@ -1,20 +1,19 @@
 <template>
-  <div class="home">
-    <Header/>
+  <div class="free">
+    <router-link :to="{name: 'login'}">
+      Login
+    </router-link>
     <Workouts />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import Header from "@/components/Header.vue";
 import Workouts from "@/components/Workouts.vue";
 import { mapState, mapActions, mapGetters } from 'vuex';
 
 export default {
-  name: "home",
+  name: "free",
   components: {
-    Header,
     Workouts
   }
 };

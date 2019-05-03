@@ -1,5 +1,7 @@
 import firebase from 'firebase/app';
 import firestore from 'firebase/firestore';
+import auth from 'firebase/auth';
+import store from './store';
 
 const config = {
   apiKey: "AIzaSyDz0wf6YcSrextNV5TKmG7P68GoOqft7Qc",
@@ -12,5 +14,14 @@ const config = {
 
 const firebaseApp = firebase.initializeApp(config);
 firebaseApp.firestore().settings({});
+
+firebaseApp.auth().onAuthStateChanged(user => {
+  console.log('USERRRRR', user);
+  if (user) {
+    store.dispatch("isLogedIn", { email: user.email, uid: user.uid });
+  } else {
+    store.dispatch("isLogedIn", null);
+  }
+});
 
 export default firebaseApp.firestore();

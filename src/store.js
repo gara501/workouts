@@ -2,13 +2,19 @@ import Vue from "vue";
 import Vuex from "vuex";
 import db from "./firebase";
 import router from './router';
+import firebase from 'firebase/app';
 
 Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
     program: { id: "", data: "" },
-    programsfs: []
+    programsfs: [],
+    user: "",
+    error: {
+      code: "",
+      message: ""
+    }
   },
   mutations: {
     setPrograms(state, programs) {
@@ -21,6 +27,12 @@ export default new Vuex.Store({
       state.programsfs = state.programsfs.filter(doc => {
         return doc.id != id;
       });
+    },
+    setUser(state, payload) {
+      state.user = payload;
+    },
+    setError(state, payload) {
+      state.error = payload;
     }
   },
   actions: {
@@ -78,6 +90,59 @@ export default new Vuex.Store({
         .then(() => {
           commit("deleteProgram", id);
         });
+    },
+    createUser({ commit }, payload) {
+      firebase.auth()
+        .createUserWithEmailAndPassword(payload.email, payload.password)
+        .then(res => {
+          commit("setUser", { email: res.user.email, uid: res.user.uid });
+        })
+        .catch(err => {
+          commit("setError", { code: err.code, message: err.message });
+        });
+    },
+    loginUser({ commit }, payload) {
+      firebase.auth()
+        .setPersistence(firebase.auth.Auth.Persistence.LOCAL)
+        .then(async () => {
+          try {
+            const res = await firebase
+              .auth()
+              .signInWithEmailAndPassword(payload.email, payload.pass);
+            commit("setUser", { email: res.user.email, uid: res.user.uid });
+            router.push({ name: "home" });
+          } catch (err) {
+            commit("setError", { code: err.code, message: err.message });
+          }
+        })
+        .catch(err => {
+          commit("setError", { code: err.code, message: err.message });
+        });
+    },
+    logoutUser({ commit }) {
+      firebase.auth().signOut();
+      commit("setUser", null);
+      router.push({ name: "login" });
+    },
+    isLogedIn({ commit }, payload) {
+      if (payload) {
+        commit("setUser", { email: payload.email, uid: payload.uid });
+      } else {
+        commit("setUser", null);
+      }
+    }
+  },
+  getters: {
+    userExists(state) {
+      if (
+        state.user === null ||
+        state.user === "" ||
+        state.user === undefined
+      ) {
+        return false;
+      } else {
+        return true;
+      }
     }
   }
 });

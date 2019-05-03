@@ -1,10 +1,9 @@
 <template>
   <div class="workouts">
-    <h4>Available Workouts</h4>
     <router-link :to="{name: 'add'}">
       <button class="btn btn-success btn-block">Crear Workout</button>
     </router-link>
-    <ul class="list-group mt-5" v-for="program of programsfs" :key="program.id">
+    <ul class="list-group mt-2" v-for="program of programsfs" :key="program.id">
       <li class="list-group-item">
         <div class="float-left">
           <p>{{program.name}}</p>
@@ -15,7 +14,6 @@
           </router-link>
           <button class="btn btn-danger" @click="deleteProgram(program.id)">Eliminar</button>
         </div>
-        
       </li>
     </ul>
   </div>
