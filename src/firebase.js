@@ -2,7 +2,7 @@ import firebase from 'firebase/app';
 import firestore from 'firebase/firestore';
 
 const config = {
-  apiKey: "AIzaSyDz0wf6YcSrextNV5TKmG7P68GoOqft7Qc",
+  apiKey: process.env.VUE_FIREBASE_API,
   authDomain: "workouts-a9794.firebaseapp.com",
   databaseURL: "https://workouts-a9794.firebaseio.com",
   projectId: "workouts-a9794",
