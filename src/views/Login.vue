@@ -1,7 +1,7 @@
 <template>
   <div class="login">
     <router-link :to="{name: 'free'}">
-      Workouts
+      Programas Gratis
     </router-link>
     <Login />
   </div>
