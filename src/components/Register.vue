@@ -32,7 +32,7 @@ export default {
     ...mapState(['error']),
     disable() {
       return this.password === this.repassword
-        && this.password != ''    
+        && this.password != ''
     }
   }
 };

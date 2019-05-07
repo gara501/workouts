@@ -1,20 +1,26 @@
 <template>
   <div class="header">
-    <img src="@/assets/logo.png" alt="logo" />
-    <ul id="nav">
-      <li>
-        <router-link :to="{name: 'home'}">Workouts</router-link>
-      </li>
-      <li>
-        <router-link :to="{name: 'add'}">Crear</router-link>
-      </li>
-      <li>
-        <p>Welcome: {{user.email}}</p>
-      </li>
-      <li>
-        <a @click="logoutUser">Logout</a>
-      </li>
-    </ul>
+     <nav class="navbar navbar-light bg-white">
+      <a class="navbar-brand" href="#">
+        <img src="@/assets/logo_eagle.png" width="30" height="30" class="d-inline-block align-top" alt="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <router-link :to="{name: 'home'}">Workouts</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link :to="{name: 'add'}">Crear</router-link>
+          </li>
+          <li class="nav-item">
+            <a @click="logoutUser">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </nav>  
   </div>
 </template>
 
@@ -41,18 +47,12 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
+.header {
+   font-family: 'Quicksand', sans-serif;
+
+  .logo {
+    margin: 30px auto;
+    width: 100px;
+  }
 }
 </style>
