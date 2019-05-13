@@ -1,20 +1,19 @@
 <template>
   <div class="free">
-    <router-link :to="{name: 'login'}">
-      Login
-    </router-link>
-    <Workouts />
+    <Header />
+    <Free />
   </div>
 </template>
 
 <script>
-import Workouts from "@/components/Workouts.vue";
-import { mapState, mapActions, mapGetters } from 'vuex';
+import Header from "@/components/Header.vue";
+import Free from "@/components/Free.vue";
 
 export default {
   name: "free",
   components: {
-    Workouts
+    Header,
+    Free
   }
 };
 </script>

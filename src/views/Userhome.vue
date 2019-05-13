@@ -1,21 +1,23 @@
 <template>
-  <div class="home">
+  <div class="userhome">
     <Header />
-    <Workouts />
+    <div class="container mt-5">
+      <Userhome />
+    </div>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import Header from "@/components/Header.vue";
-import Workouts from "@/components/Workouts.vue";
+import Userhome from "@/components/Userhome.vue";
 import { mapState, mapActions, mapGetters } from 'vuex';
 
 export default {
-  name: "home",
+  name: "userhome",
   components: {
     Header,
-    Workouts
+    Userhome
   }
 };
 </script>

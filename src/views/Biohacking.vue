@@ -1,20 +1,20 @@
 <template>
-  <div class="add">
+  <div class="biohacking">
     <Header />
-    <Add />
+    <Bio />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import Header from "@/components/Header.vue";
-import Add from "@/components/Add.vue";
+import Bio from "@/components/Bio.vue";
 
 export default {
-  name: "add",
+  name: "Biohacking",
   components: {
     Header,
-    Add
+    Bio
   }
 };
 </script>

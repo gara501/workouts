@@ -1,6 +1,6 @@
 <template>
   <div class="register">
-    <Header msg="Welcome to Your Vue.js App" />
+    <Header />
     <Register />
   </div>
 </template>

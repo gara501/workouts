@@ -1,20 +1,20 @@
 <template>
-  <div class="add">
+  <div class="challenges">
     <Header />
-    <Add />
+    <Challenges />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import Header from "@/components/Header.vue";
-import Add from "@/components/Add.vue";
+import Challenges from "@/components/Challenges.vue";
 
 export default {
-  name: "add",
+  name: "ChallengesList",
   components: {
     Header,
-    Add
+    Challenges
   }
 };
 </script>

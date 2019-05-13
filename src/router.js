@@ -5,6 +5,11 @@ import Edit from "./views/Edit.vue";
 import Add from "./views/Add.vue";
 import Login from "./views/Login.vue";
 import Free from "./views/Free.vue";
+import Challenges from "./views/ChallengesList.vue";
+import Bio from "./views/Biohacking.vue";
+import Userhome from "./views/Userhome.vue";
+import Recipes from "./views/Recipes.vue";
+import Recipe from "./views/Recipe.vue";
 import firebase from 'firebase/app';
 
 Vue.use(Router);
@@ -12,7 +17,7 @@ Vue.use(Router);
 const router = new Router({
   routes: [
     {
-      path: "/",
+      path: "/home",
       name: "home",
       component: Home,
       meta: { requiresAuth: true }
@@ -30,9 +35,35 @@ const router = new Router({
       meta: { requiresAuth: true }
     },
     {
-      path: "/free",
+      path: "/",
       name: "free",
       component: Free
+    },
+    {
+      path: "/dashboard/:id",
+      name: "dashboard",
+      component: Userhome,
+      meta: { requiresAuth: true }
+    },
+    {
+      path: "/recipes",
+      name: "recipes",
+      component: Recipes
+    },
+    {
+      path: "/recipe/:id",
+      name: "recipe",
+      component: Recipe
+    },
+    {
+      path: "/bio",
+      name: "bio",
+      component: Bio
+    },
+    {
+      path: "/challenges",
+      name: "challenges",
+      component: Challenges
     },
     {
       path: "/login",

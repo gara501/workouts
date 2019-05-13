@@ -1,26 +1,39 @@
 <template>
   <div class="header">
-     <nav class="navbar navbar-light bg-white">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
       <a class="navbar-brand" href="#">
         <img src="@/assets/logo_eagle.png" width="30" height="30" class="d-inline-block align-top" alt="logo">
       </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <router-link :to="{name: 'home'}">Workouts</router-link>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active" v-if="userExists">
+            <router-link class="nav-link" :to="{name: 'dashboard', params: {id: user.uid }}">Mis Workouts</router-link>
+          </li>
+          <li class="nav-item active" v-if="!userExists">
+            <router-link class="nav-link" :to="{name: 'free'}">Workouts</router-link>
           </li>
           <li class="nav-item">
-            <router-link :to="{name: 'add'}">Crear</router-link>
+            <router-link class="nav-link" :to="{name: 'bio'}">Biohacking</router-link>
           </li>
           <li class="nav-item">
-            <a @click="logoutUser">Logout</a>
+            <router-link class="nav-link" :to="{name: 'challenges'}">Retos</router-link>
           </li>
+          <li class="nav-item">
+            <router-link class="nav-link" :to="{name: 'recipes'}">Recetas</router-link>
+          </li>
+          <li class="nav-item" v-if="!userExists">
+            <router-link class="nav-link" :to="{name: 'login'}">Miembros</router-link>
+          </li>
+          
         </ul>
+        <div class="my-2 my-lg-0" v-if="userExists">
+          <a class="mr-sm-2 logout" @click="logoutUser">Logout</a>
+        </div>
       </div>
-    </nav>  
+    </nav> 
   </div>
 </template>
 
@@ -53,6 +66,11 @@ export default {
   .logo {
     margin: 30px auto;
     width: 100px;
+  }
+
+  .logout{
+    color: red;
+    cursor: pointer;
   }
 }
 </style>
