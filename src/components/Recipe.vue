@@ -40,10 +40,14 @@ export default {
     }
   }, 
   computed: {
-    ...mapState(["recipe"])
+    recipe() {
+      return this.$store.getters.recipe;
+    },
   },
   methods: {
-    ...mapActions(["getRecipe"])
+    getRecipe() {
+      this.$store.dispatch("getRecipe", this.id);
+    }
   },
   created() {
     this.getRecipe(this.id);

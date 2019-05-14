@@ -1,74 +1,43 @@
-import Vue from "vue";
-import Vuex from "vuex";
-import db from "./firebase";
-import moduleUsers from "./store/modules/userStore";
-import modulePrograms from "./store/modules/programStore";
-import moduleRecipes from "./store/modules/recipeStore";
-import router from "./router";
+import db from "../../firebase";
+import admin from "firebase/auth";
+import router from "../../router";
 import firebase from "firebase/app";
 
-Vue.use(Vuex);
-
-export default new Vuex.Store({
-  modules: {
-    users: moduleUsers,
-    programs: modulePrograms,
-    recipes: moduleRecipes
-  },
+const moduleUsers = {
   state: {
-    recipes: [],
-    recipe: { id: "", data: "" },
     user: "",
+    users: "",
     userInfo: "",
-    userBio: "",
-    error: {
-      code: "",
-      message: ""
-    }
+    userBio: ""
   },
   mutations: {
     setUser(state, payload) {
       state.user = payload;
+    },
+    setUsers(state, payload) {
+      state.users = payload;
     },
     setUserInfo(state, payload) {
       state.userInfo = payload;
     },
     setUserBio(state, payload) {
       state.userBio = payload;
-    },
-    setError(state, payload) {
-      state.error = payload;
-    },
-    setRecipes(state, payload) {
-      state.recipes = payload;
-    },
-    setRecipe(state, recipe) {
-      state.recipe = recipe;
     }
   },
   actions: {
-    getRecipes({ commit }) {
-      const recipes = [];
-      db.collection("recipes")
+    getUsers({ commit }) {
+      const users = [];
+      db.collection("usersdata")
         .get()
         .then(snapshot => {
           snapshot.forEach(doc => {
-            let recipe = doc.data();
-            recipe.id = doc.id;
-            recipes.push(recipe);
+            let user = {};
+            user.id = doc.data().loginId;
+            user.fullname = `${doc.data().firstname} ${doc.data().lastname}`;
+            users.push(user);
           });
         });
-      commit("setRecipes", recipes);
-    },
-    getRecipe({ commit }, id) {
-      db.collection("recipes")
-        .doc(id)
-        .get()
-        .then(doc => {
-          let recipes = doc.data();
-          recipes.id = doc.id;
-          commit("setRecipe", recipes);
-        });
+      commit("setUsers", users);
     },
     getUserInfo({ commit }, id) {
       let userdata = {};
@@ -112,8 +81,21 @@ export default new Vuex.Store({
             const res = await firebase
               .auth()
               .signInWithEmailAndPassword(payload.email, payload.pass);
-            commit("setUser", { email: res.user.email, uid: res.user.uid });
-            router.push({ name: "dashboard", params: { id: res.user.uid } });
+            if (process.env.VUE_APP_ADMINS_ACCOUNTS.includes(res.user.email)) {
+              commit("setUser", {
+                email: res.user.email,
+                uid: res.user.uid,
+                admin: true
+              });
+              router.push({ name: "admin", params: { id: res.user.uid } });
+            } else {
+              commit("setUser", {
+                email: res.user.email,
+                uid: res.user.uid,
+                admin: false
+              });
+              router.push({ name: "dashboard", params: { id: res.user.uid } });
+            }
           } catch (err) {
             commit("setError", { code: err.code, message: err.message });
           }
@@ -146,6 +128,20 @@ export default new Vuex.Store({
       } else {
         return true;
       }
+    },
+    user(state) {
+      return state.user;
+    },
+    userInfo(state) {
+      return state.userInfo;
+    },
+    userBio(state) {
+      return state.userBio;
+    },
+    users(state) {
+      return state.users;
     }
   }
-});
+};
+
+export default moduleUsers;

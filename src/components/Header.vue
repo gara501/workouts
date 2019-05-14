@@ -9,10 +9,10 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active" v-if="userExists">
-            <router-link class="nav-link" :to="{name: 'dashboard', params: {id: user.uid }}">Mis Workouts</router-link>
+          <li class="nav-item active" v-if="userLoaded">
+            <router-link class="nav-link" :to="{name: 'dashboard', params: {id: user.uid }}">Mis Perfil</router-link>
           </li>
-          <li class="nav-item active" v-if="!userExists">
+          <li class="nav-item active" v-if="!userLoaded">
             <router-link class="nav-link" :to="{name: 'free'}">Workouts</router-link>
           </li>
           <li class="nav-item">
@@ -24,12 +24,12 @@
           <li class="nav-item">
             <router-link class="nav-link" :to="{name: 'recipes'}">Recetas</router-link>
           </li>
-          <li class="nav-item" v-if="!userExists">
+          <li class="nav-item" v-if="!userLoaded">
             <router-link class="nav-link" :to="{name: 'login'}">Miembros</router-link>
           </li>
           
         </ul>
-        <div class="my-2 my-lg-0" v-if="userExists">
+        <div class="my-2 my-lg-0" v-if="userLoaded">
           <a class="mr-sm-2 logout" @click="logoutUser">Logout</a>
         </div>
       </div>
@@ -49,11 +49,17 @@ export default {
     Workouts
   },
   computed: {
-    ...mapState(['user']),
-    ...mapGetters(['userExists'])
+    user() {
+      return this.$store.getters.user;
+    },
+    userLoaded() {
+      return this.$store.getters.userExists;
+    }
   }, 
   methods: {
-    ...mapActions(['logoutUser'])
+    logoutUser() {
+      this.$store.dispatch("logoutUser");
+    }
   }
 };
 </script>

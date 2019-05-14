@@ -3,7 +3,7 @@
     <router-link :to="{name: 'add'}">
       <button class="btn btn-success btn-block">Crear Workout</button>
     </router-link>
-    <ul class="list-group mt-2" v-for="program of programsfs" :key="program.id">
+    <ul class="list-group mt-2" v-for="program of programs" :key="program.id">
       <li class="list-group-item">
         <div class="float-left">
           <p>{{program.name}}</p>
@@ -20,14 +20,19 @@
 </template>
 
 <script>
-import { mapState, mapActions } from 'vuex';
+import { mapState, mapActions, mapGetters } from 'vuex';
 export default {
   name: "Workouts",
   computed: {
-    ...mapState(['programsfs'])
+    ...mapState({
+      programs: state => state.programs.programsfs
+    })
   },
   methods: {
-    ...mapActions(['getData', 'deleteProgram'])
+    ...mapActions({
+      getData: state => state.programs.getData,
+      deleteProgram: state => state.programs.deleteProgram
+    })
   },
   created() {
     this.getData();

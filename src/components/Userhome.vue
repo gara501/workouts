@@ -45,13 +45,32 @@ export default {
     }
   },
   computed: {
-    ...mapState(['programsByUser', 'user', 'userInfo', 'userBio'])
+    programsByUser() {
+      return this.$store.getters["programsByUser"];
+    },
+    user() {
+      return this.$store.getters.user;
+    },
+    userInfo() {
+      return this.$store.getters.userInfo;
+    },
+    userBio() {
+      return this.$store.getters.userBio;
+    }
   },
   methods: {
-    ...mapActions(['getProgramsUser', 'getUserInfo', 'getUserBio'])
+    getProgramsByUser(){
+      this.$store.dispatch("getProgramsUser", this.id);
+    },
+    getUserInfo() {
+      this.$store.dispatch("getUserInfo", this.id);
+    },
+    getUserBio() {
+      this.$store.dispatch("getUserBio", this.id);
+    }
   },
   created() {
-    this.getProgramsUser(this.id);
+    this.getProgramsByUser(this.id);
     this.getUserInfo(this.id);
     this.getUserBio(this.id);
   }

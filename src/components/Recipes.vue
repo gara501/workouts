@@ -18,10 +18,14 @@ import { mapState, mapActions } from 'vuex';
 export default {
   name: "Recipes",
   computed: {
-    ...mapState(['recipes'])
+    recipes() {
+      return this.$store.getters.recipes;
+    },
   },
   methods: {
-    ...mapActions(['getRecipes'])
+    getRecipes() {
+      this.$store.dispatch("getRecipes", this.id);
+    }
   },
   created() {
     this.getRecipes();

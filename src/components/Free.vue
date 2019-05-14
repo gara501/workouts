@@ -1,6 +1,6 @@
 <template>
   <div class="free">
-    <ul class="list-group mt-2" v-for="program of programsfs" :key="program.id">
+    <ul class="list-group mt-2" v-for="program of programs" :key="program.id">
       <li class="list-group-item">
         <div class="float-left">
           <p>{{program.name}}</p>
@@ -14,14 +14,19 @@
 import { mapState, mapActions } from 'vuex';
 export default {
   name: "Free",
+  programs: {},
   computed: {
-    ...mapState(['programsfs'])
+    programs() {
+      return this.$store.getters.programs;
+    }
   },
   methods: {
-    ...mapActions(['getData'])
+    loadData() {
+      this.$store.dispatch("getData");
+    }
   },
   created() {
-    this.getData();
+    this.loadData();
   }
 };
 

@@ -1,15 +1,15 @@
 import firebase from 'firebase/app';
 import firestore from 'firebase/firestore';
 import auth from 'firebase/auth';
-import store from './store';
+import store from './store/index';
 
 const config = {
-  apiKey: "AIzaSyDz0wf6YcSrextNV5TKmG7P68GoOqft7Qc",
-  authDomain: "workouts-a9794.firebaseapp.com",
-  databaseURL: "https://workouts-a9794.firebaseio.com",
-  projectId: "workouts-a9794",
-  storageBucket: "workouts-a9794.appspot.com",
-  messagingSenderId: "494097959645"
+  apiKey: process.env.VUE_APP_FIREBASE_APIKEY,
+  authDomain: process.env.VUE_APP_FIREBASE_AUTHDOMAIN,
+  databaseURL: process.env.VUE_APP_FIREBASE_DATABASE,
+  projectId: process.env.VUE_APP_FIREBASE_PROJECTID,
+  storageBucket: process.env.VUE_APP_FIREBASE_STORAGE,
+  messagingSenderId: process.env.VUE_APP_FIREBASE_MESSAGING
 };
 
 const firebaseApp = firebase.initializeApp(config);

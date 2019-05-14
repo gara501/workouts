@@ -10,6 +10,7 @@ import Bio from "./views/Biohacking.vue";
 import Userhome from "./views/Userhome.vue";
 import Recipes from "./views/Recipes.vue";
 import Recipe from "./views/Recipe.vue";
+import Admin from "./views/Admin.vue";
 import firebase from 'firebase/app';
 
 Vue.use(Router);
@@ -43,6 +44,12 @@ const router = new Router({
       path: "/dashboard/:id",
       name: "dashboard",
       component: Userhome,
+      meta: { requiresAuth: true }
+    },
+    {
+      path: "/admin",
+      name: "admin",
+      component: Admin,
       meta: { requiresAuth: true }
     },
     {
